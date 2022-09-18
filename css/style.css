@@ -113,10 +113,22 @@ body {
 .contacts {
   font-weight: 500;
   color: #757575;
+  fill:#757575;
   font-style: normal;
   text-decoration: none;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts:hover,
+.contacts:focus svg {
+  fill: var(--accent-color);
+}
+
+.header-icons {
+  margin-right: 10px;
 }
 
 .contact {
@@ -128,7 +140,14 @@ body {
 
 /* main */
 
-.hero-title,
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/герой/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .title {
   font-weight: 900;
   font-size: 44px;
@@ -137,15 +156,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-white-color);
-  background-color: #2f303a;
-}
-
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.title {
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -199,6 +209,16 @@ body {
 .features-list {
   margin: 0 auto;
   display: flex;
+}
+
+.features-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
 }
 
 .features-item:not(:last-child) {
@@ -273,6 +293,44 @@ body {
   line-height: 1.1;
   color: var(--secondary-text-color);
   margin-bottom: 10px;
+}
+
+.team-item-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.team-social {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-social-icons {
+  display: flex;
+  fill:#AFB1B8;
+}
+
+.team-social-icons:hover,
+.team-social-icons:focus svg {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color:var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  Fill:var(--secondary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.social-icons {
+  width: 20px;
 }
 
 .team-item {
