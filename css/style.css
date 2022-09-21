@@ -44,12 +44,13 @@ body {
 .header {
   background-color: var(--secondary-white-color);
   text-decoration: none;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
+  max-width: 1600px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-content {
@@ -71,7 +72,6 @@ body {
 .header-item,
 .header-items {
   display: block;
-  padding: 32px 0;
 }
 
 .header-item:not(:first-child),
@@ -140,13 +140,15 @@ body {
 
 /* main */
 
-.hero {
+.hero-container {
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/герой/hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .title {
@@ -208,8 +210,9 @@ body {
 }
 
 .features-list {
-  margin: 0 auto;
+  width: 1170px;
   display: flex;
+  margin: 0 auto;
 }
 
 .features-icon {
@@ -412,6 +415,7 @@ body {
 }
 
 .footer-container {
+  max-width: 1600px;
   display: flex;
   align-items: baseline;
 }
@@ -484,6 +488,11 @@ body {
 
 /* портфоліо */
 
+.button {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
 .button-list {
   width: 575px;
   color: var(--secondary-bcg-color);
@@ -531,9 +540,11 @@ body {
 }
 
 .work-list {
+  max-width: 1230px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin: 0 auto;
 }
 
 .work-item {
